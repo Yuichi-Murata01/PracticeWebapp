@@ -1,0 +1,156 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    padding: 16px 16px;
+    font-size: 32px;
+}
+
+#header-menus {
+    background-color: black;
+    font-size: 16px;
+}
+
+
+#header-menus ul {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#header-menus li {
+    padding: 10px 60px 10px 0;
+}
+
+
+.header-container {
+    max-width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.globalMenus {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sized {
+    border-style:none;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+
+
+.copy-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    margin-top: 60px;
+}
+
+.copy-containertop {
+    padding: 10px 10px;
+}
+
+.link {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#main {
+    width: 66%;
+}
+
+#sub {
+    width: 33%;
+}
+
+.main-sized {
+    width: 100%;
+}
+
+
+.main-containertop {
+    width: 66%;
+    padding:10px 10px;
+}
+
+
+.main-container-right {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.author {
+    width: 33%;
+}
+
+.author-sized {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.ranking-img {
+    width: 100%;
+}
+
+.Archive li {
+    list-style: none;
+    padding: 5px 5px;
+}
+
+.Archive-list {
+    border-bottom: solid 2px #000;
+}
+
+#footer {
+    display: flex;
+}
+
+.footer {
+    background-color:#F7F7F7;
+}
+
+
+
+.footer-parts {
+    width: 33%;
+    display: inline-block;
+}
+
+.footer-menulist li {
+    border-bottom: solid 2px #000 ;
+}
