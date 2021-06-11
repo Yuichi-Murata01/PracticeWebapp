@@ -23,7 +23,7 @@ body {
         "... main   main    main   ..." 500px
         "... left   left    right  ..." minmax(800px,1fr)
         "... footer footer  footer ..." 450px
-        / 10px 1fr 1fr 1fr 10px; 
+        / auto 1fr 1fr 1fr auto; 
 }
 
 header {
@@ -32,10 +32,12 @@ header {
 
 #main {
     grid-area: main;
+    display: flex;
 }
 
 #left {
     grid-area: left;
+    padding: 10px;
 }
 
 #right {
@@ -82,22 +84,47 @@ nav ul li {
     color: white;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 // main
 
+.copy-container {
+    margin: 10px 10px;
+}
+
 .sized {
-    width: 30%;
+    width: 100%;
+}
+
+.copy-container h2 {
+    font-size: 16px;
+}
+
+.copy-container .link {
+    text-align: center;
 }
 
 
 // left
 
+
+
 .main-sized {
-    width: 66%;
+    width: 100%;
+    padding: 10px 10px;
 }
 
 
 // right
+
+.author-sized {
+    width: 120px;
+    border-radius: 50%;
+}
 
 .ranking-img {
     width: 100%;
@@ -148,10 +175,7 @@ nav ul li {
 //     width: 33%;
 // }
 
-// .author-sized {
-//     width: 120px;
-//     border-radius: 50%;
-// }
+
 
 // .ranking-img {
 //     width: 100%;
