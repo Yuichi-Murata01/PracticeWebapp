@@ -13,17 +13,17 @@
 // gridの調整
 
 body {
-    width: 1200px;    
+    width: 100%;    
     margin: 0 auto;
     min-height: 100vh;
     display: grid;
     grid-template: 
         "... .....  .....   .....  ..." 50px
         "... header header  header ..." 150px
-        "... main   main    main   ..." 400px
-        "... left   left    right  ..."  minmax(500px,800px)
+        "... main   main    main   ..." 500px
+        "... left   left    right  ..." minmax(800px,1fr)
         "... footer footer  footer ..." 450px
-        / 10px  1fr 1fr 1fr 10px; 
+        / 10px 1fr 1fr 1fr 10px; 
 }
 
 header {
@@ -63,10 +63,11 @@ footer {
 // ここから各要素の配置
 
 
-
+// header
 
 nav {
     background-color: black;
+    width: 100%;
 }
 
 nav ul {
@@ -75,33 +76,32 @@ nav ul {
     width: 100%;
 }
 
-#header-menus li {
+nav ul li {
     padding: 10px 60px 10px 0;
     list-style: none;
     color: white;
 }
 
 
-// .header-container {
-//     max-width: 100%;
-//     padding: 0 16px;
-//     margin: 0 auto;
-// }
+// main
+
+.sized {
+    width: 30%;
+}
 
 
+// left
+
+.main-sized {
+    width: 66%;
+}
 
 
+// right
 
-// .globalMenus {
-//     text-decoration: none;
-//     color: white;
-// }
-
-
-// .sized {
-//     border-style:none;
-//     width: 100%;
-// }
+.ranking-img {
+    width: 100%;
+}
 
 // #container {
 //     display: flex;
@@ -130,9 +130,7 @@ nav ul {
 
 
 
-// .main-sized {
-//     width: 100%;
-// }
+
 
 
 // .main-containertop {

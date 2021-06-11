@@ -7,12 +7,12 @@
     <header>
         <h1 class="header-logo">Tavel Blog</h1>
         <nav>
-            <ul id="header-menus">
-                <li><%= link_to("NEW", "/#", class:"globalMenus") %></li>
-                <li><%= link_to("COLUMN","/#", class:"globalMenus") %></li>
-                <li><%= link_to("SERIES","/#", class:"globalMenus") %></li>
-                <li><%= link_to("Q&A","/#", class:"globalMenus") %></li>
-                <li><%= link_to("CONTACT","/#", class:"globalMenus") %></li>
+            <ul>
+                <li><%= link_to("NEW", "/#") %></li>
+                <li><%= link_to("COLUMN","/#") %></li>
+                <li><%= link_to("SERIES","/#") %></li>
+                <li><%= link_to("Q&A","/#") %></li>
+                <li><%= link_to("CONTACT","/#") %></li>
             </ul>
         </nav> 
     </header>
@@ -59,7 +59,8 @@
         </div> 
     </div>
     <div id="right" class="container-block">
-        <div class="author"> 
+        <div class="author">
+            <%= link_to image_tag('author.jpeg',class:'author-sized'), "/#" %>
             <h3>Name Name</h3>
             <p>プロフィールテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
