@@ -5,10 +5,8 @@
 
 <body>
     <header>
-        <h1 class="header-logo">>Tavel Blog</h1>
-        <%
-=begin%>
- <nav>
+        <h1 class="header-logo">Tavel Blog</h1>
+        <nav>
             <ul id="header-menus">
                 <li><%= link_to("NEW", "/#", class:"globalMenus") %></li>
                 <li><%= link_to("COLUMN","/#", class:"globalMenus") %></li>
@@ -17,14 +15,10 @@
                 <li><%= link_to("CONTACT","/#", class:"globalMenus") %></li>
             </ul>
         </nav> 
-<%
-=end%>
     </header>
 
     <div id="main" class="container">
-        <%
-=begin%>
- <div class="copy-container">
+        <div class="copy-container">
             <%= image_tag 'pickup1.jpeg', class: 'sized' %>
             <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
             <%= link_to("READ MORE","/#",class:'link') %>>
@@ -41,15 +35,11 @@
             <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
             <%= link_to("READ MORE","/#",class:'link') %>>
         </div> 
-<%
-=end%>
     </div>
     <div id="left" class="container-block">
         <div class="main-containertop">
             <h2>タイトルテキストテキストテキストテキストテキスト</h2>
-            <%
-=begin%>
- <%= link_to image_tag('main1.jpeg',class:'main-sized'), "/#" %>
+            <%= link_to image_tag('main1.jpeg',class:'main-sized'), "/#" %>
             <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             <%= link_to("READ MORE","/#",class:'link') %>
         </div>
@@ -67,25 +57,11 @@
             <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             <%= link_to("READ MORE","/#",class:'link') %>
         </div> 
-<%
-=end%>
-        </div>
     </div>
     <div id="right" class="container-block">
-        <%
-=begin%>
- <div class="author"> 
-<%
-=end%>
-            <%
-=begin%>
- <%= link_to image_tag('author.jpeg',class:'author-sized') %> 
-<%
-=end%>
+        <div class="author"> 
             <h3>Name Name</h3>
-            <%
-=begin%>
- <p>プロフィールテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>プロフィールテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
         <div class="ranking">
             <h3>Ranking</h3>
@@ -122,15 +98,11 @@
                 <li><%= link_to("XXXX年XX月(XX)","/#",class: "Archive-list") %></li>
             </ul>
         </div> 
-<%
-=end%>
     </div>
 </body>
 
 <footer>
-    <%
-=begin%>
- <div class="footer-parts">
+    <div class="footer-parts">
         <h2>ABOUT</h2>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         <div class="footer-about">
@@ -172,6 +144,4 @@
         <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div> 
-<%
-=end%>
 </footer>
