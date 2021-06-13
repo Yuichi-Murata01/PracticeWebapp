@@ -10,24 +10,21 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-// gridの調整
+// gridの調整 layoutの調整
 
 body {
-    width: 100%;    
     margin: 0 auto;
-    min-height: 100vh;
     display: grid;
     grid-template: 
-        "... .....  .....   .....  ..." 50px
         "... header header  header ..." 150px
-        "... main   main    main   ..." 500px
-        "... left   left    right  ..." minmax(800px,1fr)
+        "... main   main    main   ..." 
+        "... sub    sub     sub  ..." minmax(800px,1fr)
         "... footer footer  footer ..." 450px
         / auto 1fr 1fr 1fr auto; 
 }
 
 header {
-    grid-area: header;    
+    grid-area: header;
 }
 
 #main {
@@ -35,20 +32,82 @@ header {
     display: flex;
 }
 
+// subの内容をより詳細にgrid
+
+#sub {
+    grid-area: sub;
+    display: grid;
+    grid-template:
+        "left left right" minmax(800px,1fr)
+        / 1fr 1fr 1fr;
+}
+
+
 #left {
     grid-area: left;
     padding: 10px;
 }
 
+// subのright contentsを調整
+
 #right {
     grid-area: right;
+    display: grid;
+    grid-template:
+        "author"
+        "ranking"
+        "Archive"
 }
 
+// writer表示箇所
+
+#author {
+    grid-area: author;
+}
+
+// blogのrankingの箇所
+#ranking {
+    grid-area: ranking;
+}
+
+#Archive {
+    grid-area: Archive;
+}
 
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template:
+        "footer-left footer-center footer-right" 1fr
+        / 1fr 1fr 1fr;
+    
+    max-width: 1200px;
+    background-color: #F7F7F7;
 }
 
+
+#footer-left {
+    grid-area: footer-left;
+}
+
+#footer-center {
+    grid-area: footer-center;
+}
+
+
+#footer-right {
+    grid-area: footer-right;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+// responsive
 
 @media screen and (max-width: 768px) {
     body {
@@ -65,7 +124,15 @@ footer {
 // ここから各要素の配置
 
 
+// 全体に共通するcss
+.center {
+    display:block;
+    text-align: center;
+}
+
+
 // header
+
 
 nav {
     background-color: black;
@@ -78,16 +145,13 @@ nav ul {
     width: 100%;
 }
 
-nav ul li {
+.wrapper li {
     padding: 10px 60px 10px 0;
     list-style: none;
     color: white;
 }
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 
 // main
@@ -130,103 +194,9 @@ nav ul li {
     width: 100%;
 }
 
-// #container {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 60px;
-// }
 
+// foooter-color
+.footer-color {
+    background-color: #F7F7F7;
+}
 
-
-
-// .copy-containertop {
-//     padding: 10px 10px;
-// }
-
-// .link {
-//     text-align: center;
-// }
-
-// h2 {
-//     text-align: center;
-// }
-
-// p {
-//     text-align: center;
-// }
-
-
-
-
-
-
-// .main-containertop {
-//     width: 66%;
-//     padding:10px 10px;
-// }
-
-
-// .main-container-right {
-//     width: 33%;
-//     margin: 0 auto;
-// }
-
-// .author {
-//     width: 33%;
-// }
-
-
-
-// .ranking-img {
-//     width: 100%;
-// }
-
-// .Archive li {
-//     list-style: none;
-//     padding: 5px 5px;
-// }
-
-// .Archive-list {
-//     border-bottom: solid 2px #000;
-// }
-
-// #footer {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-
-
-
-// .footer-parts {
-//     max-width: 1200px;
-//     width: 100%;
-//     padding: 20px 30px;
-// }
-
-
-// .footer-parts h2 {
-//     padding: 20px auto;
-// }
-
-// .footer-parts p {
-//     font-size: 14px;
-// }
-
-// .footer-list li {
-//     border-bottom: solid 2px #000 ;
-//     list-style: none;
-// }
-
-
-// .footer-list::before {
-//     position: absolute;
-//     content: '';
-//     width: 0;
-//     height: 0;
-//     border: solid 6px transparent;
-//     border-left: solid 8px #697b91;
-//     top: 50%;
-//     left: 0;
-//     margin-top: -5px;
-// }
