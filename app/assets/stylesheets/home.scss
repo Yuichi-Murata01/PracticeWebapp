@@ -97,6 +97,7 @@ footer {
 
 #footer-right {
     grid-area: footer-right;
+    max-height: 450px;
 }
 
 
@@ -176,7 +177,6 @@ nav ul {
 // left
 
 
-
 .main-sized {
     width: 100%;
     padding: 10px 10px;
@@ -194,9 +194,29 @@ nav ul {
     width: 100%;
 }
 
+.Archive-list {
+    border-top: 1px solid #777777;
+    padding: 20px;
+    text-align: left;
+    display: block;
+    font-size: 0.8rem;
+}
 
-// foooter-color
+
+// foooter
+
 .footer-color {
     background-color: #F7F7F7;
 }
 
+.footer-layout {
+    padding: 15px;
+}
+
+.footer-border {
+    border-top: 1px solid #777777;
+    padding: 5px;
+    text-align: left;
+    display: block;
+    font-size: 0.8rem;
+}

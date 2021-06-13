@@ -128,7 +128,7 @@
 </body>
 
 <footer class="wrapper">
-    <div id="footer-left">
+    <div id="footer-left" class="footer-layout">
         <h2>ABOUT</h2>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         <div class="footer-about">
@@ -145,29 +145,29 @@
             </ul>
         </div>
     </div>
-    <div id="footer-center">
+    <div id="footer-center" class="footer-layout">
         <h2>MENU</h2>
         <ul　class="footer-list">
             <li>
-                <%= link_to("NEW","/#") %>
+                <%= link_to("NEW","/#",{class: "footer-border"}) %>
             </li>
             <li>
-                <%= link_to("CATEGORY","/#") %>
+                <%= link_to("CATEGORY","/#",{class: "footer-border"}) %>
             </li>
             <li>
-                <%= link_to("COLUMN","/#") %>
+                <%= link_to("COLUMN","/#",{class: "footer-border"}) %>
             </li>
             <li>
-                <%= link_to("SERIES","/#") %>
+                <%= link_to("SERIES","/#",{class: "footer-border"}) %>
             </li>
             <li>
-                <%= link_to("Q&A","/#") %>
+                <%= link_to("Q&A","/#",{class: "footer-border"}) %>
             </li>
         </ul>
     </div>
-    <div id="footer-right">
+    <div id="footer-right" class="footer-layout">
         <h2>Twitter</h2>
-        <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a>
+        <a class="twitter-timeline" data-height="320" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <p class="copy-write">© Travel & Blog</p> 
