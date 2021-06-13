@@ -19,12 +19,16 @@ body {
         "... header header  header ..." 150px
         "... main   main    main   ..." 
         "... sub    sub     sub  ..." minmax(800px,1fr)
-        "... footer footer  footer ..." 450px
+        "... footer footer  footer ..." 
         / auto 1fr 1fr 1fr auto; 
 }
 
 header {
     grid-area: header;
+    position: fixed;
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #main {
@@ -77,14 +81,22 @@ header {
 footer {
     grid-area: footer;
     display: grid;
-    grid-template:
-        "footer-left footer-center footer-right" 1fr
-        / 1fr 1fr 1fr;
-    
-    max-width: 1200px;
+    grid-template: 
+        "footer-container" 1fr
+        / 1fr;
     background-color: #F7F7F7;
+    width: 100vw;
 }
 
+#footer-container {
+    grid-area: footer-container;
+    display: grid;
+    grid-template:
+    "footer-left footer-center footer-right" 1fr
+    "....        copy-write    ...." auto
+    / 1fr 1fr 1fr;
+
+}
 
 #footer-left {
     grid-area: footer-left;
@@ -100,12 +112,17 @@ footer {
     max-height: 450px;
 }
 
+.copy-write {
+    grid-area: copy-write;
+}
+
 
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
 }
+
 
 
 // responsive
@@ -134,6 +151,9 @@ footer {
 
 // header
 
+header {
+    background-color: #fff;
+}
 
 nav {
     background-color: black;
@@ -146,12 +166,20 @@ nav ul {
     width: 100%;
 }
 
-.wrapper li {
+#header-color li a {
     padding: 10px 60px 10px 0;
     list-style: none;
     color: white;
 }
 
+.wrapper li {
+    list-style: none;
+}
+
+.wrapper li a {
+    color: black;
+    text-decoration: none;
+}
 
 
 
@@ -219,4 +247,8 @@ nav ul {
     text-align: left;
     display: block;
     font-size: 0.8rem;
+}
+
+.copy-write {
+    text-align: center;
 }

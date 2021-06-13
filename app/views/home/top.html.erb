@@ -7,7 +7,7 @@
     <header>
         <h1 class="wrapper">Tavel Blog</h1>
         <nav>
-            <ul class="wrapper">
+            <ul id="header-color" class="wrapper">
                 <li><%= link_to("NEW", "/#") %></li>
                 <li><%= link_to("COLUMN","/#") %></li>
                 <li><%= link_to("SERIES","/#") %></li>
@@ -127,48 +127,50 @@
     </div>
 </body>
 
-<footer class="wrapper">
-    <div id="footer-left" class="footer-layout">
-        <h2>ABOUT</h2>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <div class="footer-about">
+<footer class="footer-color">
+    <div id="footer-container" class="wrapper">
+        <div id="footer-left" class="footer-layout">
+            <h2>ABOUT</h2>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="footer-about">
+                <ul　class="footer-list">
+                    <li>
+                        <%= link_to("プロフィール詳細", "/#") %>
+                    </li>
+                    <li>
+                        <%= link_to("お仕事の依頼", "/#") %>
+                    </li>
+                    <li>
+                        <%= link_to("お問い合わせ", "/#") %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-center" class="footer-layout">
+            <h2>MENU</h2>
             <ul　class="footer-list">
                 <li>
-                    <%= link_to("プロフィール詳細", "/#") %>
+                    <%= link_to("NEW","/#",{class: "footer-border"}) %>
                 </li>
                 <li>
-                    <%= link_to("お仕事の依頼", "/#") %>
+                    <%= link_to("CATEGORY","/#",{class: "footer-border"}) %>
                 </li>
                 <li>
-                    <%= link_to("お問い合わせ", "/#") %>
+                    <%= link_to("COLUMN","/#",{class: "footer-border"}) %>
+                </li>
+                <li>
+                    <%= link_to("SERIES","/#",{class: "footer-border"}) %>
+                </li>
+                <li>
+                    <%= link_to("Q&A","/#",{class: "footer-border"}) %>
                 </li>
             </ul>
         </div>
+        <div id="footer-right" class="footer-layout">
+            <h2>Twitter</h2>
+            <a class="twitter-timeline" data-height="320" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <p class="copy-write">© Travel & Blog</p> 
     </div>
-    <div id="footer-center" class="footer-layout">
-        <h2>MENU</h2>
-        <ul　class="footer-list">
-            <li>
-                <%= link_to("NEW","/#",{class: "footer-border"}) %>
-            </li>
-            <li>
-                <%= link_to("CATEGORY","/#",{class: "footer-border"}) %>
-            </li>
-            <li>
-                <%= link_to("COLUMN","/#",{class: "footer-border"}) %>
-            </li>
-            <li>
-                <%= link_to("SERIES","/#",{class: "footer-border"}) %>
-            </li>
-            <li>
-                <%= link_to("Q&A","/#",{class: "footer-border"}) %>
-            </li>
-        </ul>
-    </div>
-    <div id="footer-right" class="footer-layout">
-        <h2>Twitter</h2>
-        <a class="twitter-timeline" data-height="320" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <p class="copy-write">© Travel & Blog</p> 
 </footer>
